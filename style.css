@@ -1,5 +1,11 @@
+:root{
+    --euro: #384988;
+    --gray-back: rgb(241, 240, 240);
+    --euro-light: #c5d1fc;
+}
+
 .menu-inicial{
-    background-color: #384988;
+    background-color: var(--euro);
 }
 
 .header{
@@ -29,9 +35,10 @@
 
 .menu-lateral{
     width: 15%;
-    height: 80%;
+    height: 75vh;
     box-shadow: 0.1rem 0 0 black;
     position: fixed;
+    overflow-y: auto;
 }
 
 .menu-lateral a{
@@ -39,7 +46,7 @@
 }
 
 .menu-lateral a:hover{
-    background-color: rgb(241, 240, 240);
+    background-color: var(--gray-back);
     border-radius: 10%;
 }
 
@@ -47,7 +54,87 @@
     margin-bottom: 1rem;
 }
 
+.nav-item{
+    width: 100%;
+}
+
 .nav-link-lateral{
     color: black;
     text-decoration: none;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    width: 18rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    display: none;
+}
+
+.chatbot-header {
+    background-color: var(--euro);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-body {
+    height: 16rem;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.chatbot-footer {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+#chatbot-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-top: none;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--euro);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.user-message, .bot-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: var(--euro-light);
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f4ff95;
+    text-align: left;
+}
+
+
