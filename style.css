@@ -144,4 +144,11 @@ button:hover {
     resize: none;
 }
 
+.login{
+    background-color: var(--euro);
+}
+
+.login-box{
+    background-color: white;
+}
 
