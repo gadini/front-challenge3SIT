@@ -31,12 +31,14 @@
 
 .conteudo{
     padding-top: 2rem;
+    height: 75vh;
+    position: relative;
+    overflow-y: auto;
 }
 
 .menu-lateral{
     width: 15%;
     height: 75vh;
-    box-shadow: 0.1rem 0 0 black;
     position: fixed;
     overflow-y: auto;
 }
@@ -135,6 +137,11 @@ button:hover {
 .bot-message {
     background-color: #f4ff95;
     text-align: left;
+}
+
+.large-textarea{
+    height: 8rem;
+    resize: none;
 }
 
 
